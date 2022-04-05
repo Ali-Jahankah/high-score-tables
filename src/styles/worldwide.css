@@ -1,0 +1,34 @@
+.world_article {
+  width: 100%;
+}
+.world_table {
+  width: 80%;
+  font-size: 1.3rem;
+  margin: 1em auto;
+  text-align: center;
+}
+.world_table thead tr td {
+  padding: 0.5em;
+}
+.world_table thead {
+  background: purple;
+}
+.world_table {
+  border-collapse: collapse;
+}
+.world_table tbody tr:nth-child(odd) {
+  color: wheat;
+  background: rgb(63, 11, 63);
+}
+.world_table tbody tr:nth-child(even) {
+  color: rgb(226, 180, 94);
+  background: rgb(53, 30, 53);
+}
+.world_table tbody tr td {
+  padding: 0.4em;
+}
+.world_title {
+  text-align: center;
+  margin: 1em auto;
+  color: wheat;
+}
