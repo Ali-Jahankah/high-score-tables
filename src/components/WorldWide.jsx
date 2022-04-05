@@ -20,9 +20,9 @@ const WorldWide = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {sortedArray.map((item) => {
+          {sortedArray.map((item, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 <td>{item.n}</td>
                 <td>{item.s}</td>
               </tr>
