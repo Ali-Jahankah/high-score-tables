@@ -33,5 +33,5 @@ jobs:
           docker tag ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:${{ github.sha }} ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:latest
       - name: Push Docker image
         run: |
-          docker push ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/scores-table:${{ github.sha }}
-          docker push ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/scores-table:latest
+          docker push ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:${{ github.sha }}
+          docker push ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:latest
