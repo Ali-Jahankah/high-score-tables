@@ -30,7 +30,7 @@ jobs:
           docker build -t ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:${{ github.sha }} .
       - name: Tag Docker image
         run: |
-          docker tag ghcr.io/${{ github.repository_owner }}/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/scores-table:${{ github.sha }} ghcr.io/${{ github.repository_owner }}/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/scores-table:latest
+          docker tag ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:${{ github.sha }} ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/high-score-tables:latest
       - name: Push Docker image
         run: |
           docker push ghcr.io/${{ github.repository_owner }}/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/scores-table:${{ github.sha }}
