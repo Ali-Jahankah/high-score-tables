@@ -10,9 +10,9 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: action/Checkout@v3
+        uses: actions/Checkout@v3
       - name: Set up Node
-        uses: action/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
       - name: install dependencies
